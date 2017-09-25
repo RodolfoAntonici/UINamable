@@ -18,10 +18,12 @@ extension UITableViewCell {
         }
         
         //RawRepresentable
-        public init?(rawValue: String) {
+        public init(rawValue: String) {
             self.rawValue = rawValue
         }
-        
+        public init(_ rawValue: String) {
+            self.rawValue = rawValue
+        }
         
         //Equatable
         public static func ==(lhs: UITableViewCell.Identifier, rhs: UITableViewCell.Identifier) -> Bool {
